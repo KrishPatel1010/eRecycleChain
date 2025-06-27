@@ -124,10 +124,15 @@ export const Hero = () => {
               size="lg"
               className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 md:px-8 md:py-4 rounded-full text-base md:text-lg font-semibold transition-all duration-300 hover:scale-105 hover:shadow-xl group w-full sm:w-auto"
             >
-              Start Mining Impact
+              Start Your Green Journey
               <ArrowRight className="ml-2 h-4 w-4 md:h-5 md:w-5 transition-transform group-hover:translate-x-1" />
             </Button>
-            <Button variant="outline" size="lg" className="border-2 border-blue-500 text-blue-600 dark:text-blue-400 hover:bg-blue-600 hover:text-white px-6 py-3 md:px-8 md:py-4 rounded-full text-base md:text-lg font-semibold transition-all duration-300 hover:scale-105 w-full sm:w-auto">
+            <Button
+              variant="outline"
+              size="lg"
+              className="border-2 border-blue-500 text-blue-600 dark:text-blue-400 hover:bg-blue-600 hover:text-white px-6 py-3 md:px-8 md:py-4 rounded-full text-base md:text-lg font-semibold transition-all duration-300 hover:scale-105 w-full sm:w-auto"
+              onClick={() => navigate('/explore')}
+            >
               Explore Network
             </Button>
           </div>
