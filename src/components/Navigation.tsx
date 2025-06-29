@@ -79,7 +79,17 @@ export const Navigation = () => {
   };
 
   const handleHomeClick = () => {
-    navigate('/');
+    if (location.pathname === '/') {
+      // If already on home page, scroll to top and refresh
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      // Use a more reliable refresh method
+      setTimeout(() => {
+        window.location.href = '/';
+      }, 500);
+    } else {
+      // Navigate to home page
+      navigate('/');
+    }
     setIsOpen(false);
   };
 
