@@ -8,28 +8,32 @@ export const HowItWorks = () => {
       icon: Smartphone,
       title: 'Submit to Network',
       description: 'Upload device details to our decentralized network with blockchain verification.',
-      color: 'bg-blue-500',
+      color: 'bg-blue-100',
+      iconColor: 'text-blue-500',
       delay: 0,
     },
     {
       icon: Shield,
       title: 'Smart Contract Validation',
       description: 'Automated smart contracts verify authenticity and calculate environmental tokens.',
-      color: 'bg-cyan-500',
+      color: 'bg-purple-100',
+      iconColor: 'text-purple-500',
       delay: 0.2,
     },
     {
       icon: Recycle,
       title: 'Certified Processing',
       description: 'Network-verified recycling partners process e-waste with blockchain tracking.',
-      color: 'bg-purple-500',
+      color: 'bg-green-100',
+      iconColor: 'text-green-500',
       delay: 0.4,
     },
     {
       icon: Coins,
       title: 'Mine Rewards',
       description: 'Earn cryptocurrency tokens and NFT certificates for contributing to the ecosystem.',
-      color: 'bg-green-500',
+      color: 'bg-yellow-100',
+      iconColor: 'text-yellow-500',
       delay: 0.6,
     },
   ];
@@ -42,15 +46,15 @@ export const HowItWorks = () => {
             Decentralized Process
           </h2>
           <p className="text-lg md:text-xl text-slate-700 dark:text-slate-300 max-w-3xl mx-auto px-4 sm:px-0">
-            Our blockchain-powered platform creates a trustless, transparent ecosystem 
+            Our blockchain-powered platform creates a trustless, transparent ecosystem
             where every e-waste transaction is verified and rewarded automatically.
           </p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
           {steps.map((step, index) => (
-            <Card 
-              key={index} 
+            <Card
+              key={index}
               className="relative overflow-hidden bg-white/80 dark:bg-slate-900/60 border-slate-300 dark:border-slate-700 hover:border-blue-500/50 hover:shadow-xl transition-all duration-500 hover:scale-105 animate-fade-in-up group"
               style={{ animationDelay: `${step.delay}s` }}
             >
@@ -62,7 +66,7 @@ export const HowItWorks = () => {
 
                 {/* Icon */}
                 <div className={`w-12 h-12 md:w-16 md:h-16 ${step.color} rounded-xl md:rounded-2xl flex items-center justify-center mx-auto mb-4 md:mb-6 group-hover:scale-110 transition-transform duration-300 animate-blockchain-pulse`}>
-                  <step.icon className="h-6 w-6 md:h-8 md:w-8 text-white" />
+                  <step.icon className={`h-6 w-6 md:h-8 md:w-8 ${step.iconColor}`} />
                 </div>
 
                 {/* Content */}
@@ -83,18 +87,7 @@ export const HowItWorks = () => {
         </div>
 
         {/* Interactive Demo Section */}
-        <div className="mt-16 md:mt-20 text-center">
-          <div className="inline-flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-4 bg-white/80 dark:bg-slate-900/60 backdrop-blur-sm p-6 md:p-8 rounded-xl md:rounded-2xl border border-slate-300 dark:border-slate-700">
-            <div className="flex items-center space-x-2">
-              <div className="w-2 h-2 md:w-3 md:h-3 bg-blue-500 rounded-full animate-pulse"></div>
-              <Network className="h-4 w-4 md:h-5 md:w-5 text-blue-600 dark:text-blue-400" />
-              <span className="text-slate-700 dark:text-slate-300 font-medium text-sm md:text-base">Live Network Demo</span>
-            </div>
-            <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 md:px-6 md:py-2 rounded-full font-medium hover:scale-105 transition-transform duration-200 text-sm md:text-base">
-              Connect Wallet
-            </button>
-          </div>
-        </div>
+        {/* Removed Live Network Demo and Connect Wallet callout */}
       </div>
     </section>
   );
