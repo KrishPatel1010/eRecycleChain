@@ -129,7 +129,7 @@ const EnhancedBlockchainNetwork = () => {
         { text: 'Validation', icon: <Eye className="inline h-5 w-5 mr-1 align-middle" /> },
         { text: 'Reward', icon: <Gift className="inline h-5 w-5 mr-1 align-middle" /> },
         { text: 'Finality', icon: <CheckCircle className="inline h-5 w-5 mr-1 align-middle" /> },
-        { text: 'Next Cycle', icon: <ArrowRight className="inline h-5 w-5 mr-1 align-middle" /> },
+        { text: 'Repeat & Scale', icon: <ArrowRight className="inline h-5 w-5 mr-1 align-middle" /> },
     ];
 
     // Animation logic: progress from block to block along the polyline
@@ -360,7 +360,9 @@ const ExploreNetwork = () => {
                             <Eye className="h-10 w-10 text-blue-500 animate-pulse-glow" />
                             <div>
                                 <CardTitle className="text-2xl font-bold mb-2">Verifier Overview</CardTitle>
-                                <CardDescription className="text-lg text-slate-700 dark:text-slate-300 mb-2">A verifier is an eco-conscious user or AI system that confirms the accuracy of submitted e-waste types before rewards are distributed. This ensures honest recycling, prevents spam, and builds trust and transparency in the network.</CardDescription>
+                                <CardDescription className="text-lg text-slate-700 dark:text-slate-300 mb-2">
+                                    Verifiers—both AI and human—ensure that every recycled item is real, accurately classified, and ethically rewarded. This builds trust and transparency in the system.
+                                </CardDescription>
                                 <ul className="list-disc pl-6 space-y-2 text-slate-700 dark:text-slate-300">
                                     <li className="flex items-center gap-2"><Search className="h-5 w-5 text-blue-400" />Ensures honest recycling behavior</li>
                                     <li className="flex items-center gap-2"><Cpu className="h-5 w-5 text-purple-400" />Prevents spam or incorrect data</li>
@@ -383,6 +385,9 @@ const ExploreNetwork = () => {
 
                 {/* Section 2: Network */}
                 <section id="blockchain-verification" className="container mx-auto px-4 sm:px-6 lg:px-8 mb-12 animate-fade-in-up">
+                    <div className="text-center text-base md:text-lg text-slate-700 dark:text-slate-300 mb-4 font-medium">
+                        Visualize how your item flows securely through the blockchain-powered verification and reward system.
+                    </div>
                     <EnhancedBlockchainNetwork />
                 </section>
 

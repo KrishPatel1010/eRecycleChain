@@ -46,6 +46,9 @@ const Dashboard = () => {
                   <Star className="h-8 w-8 text-blue-400" />
                   Badges & Titles
                 </div>
+                <div className="mb-6 text-center italic text-base md:text-lg text-blue-700 dark:text-blue-300">
+                  “Your actions = real impact. Every verified item is a step toward a cleaner planet.”
+                </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   {/* First Submission Badge */}
                   <div className="flex items-center gap-4 bg-white/80 dark:bg-slate-800/80 rounded-xl p-4 shadow hover:scale-105 transition-transform">

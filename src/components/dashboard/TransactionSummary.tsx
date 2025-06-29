@@ -24,6 +24,7 @@ export const TransactionSummary = ({ refreshKey }: TransactionSummaryProps) => {
     verified: 0,
     earned: 0,
     loading: false,
+    total: 0,
   });
 
   const fetchSummary = useCallback(async () => {
@@ -37,6 +38,7 @@ export const TransactionSummary = ({ refreshKey }: TransactionSummaryProps) => {
         provider
       );
       const itemCounter = await tracker.itemCounter();
+      console.log('Fetched itemCounter from contract:', itemCounter);
       const total = Number(itemCounter);
       let submitted = 0;
       let verified = 0;
@@ -57,6 +59,7 @@ export const TransactionSummary = ({ refreshKey }: TransactionSummaryProps) => {
         verified,
         earned: verified * REWARD_PER_ITEM,
         loading: false,
+        total,
       });
     } catch {
       setSummary((s) => ({ ...s, loading: false }));
@@ -91,7 +94,7 @@ export const TransactionSummary = ({ refreshKey }: TransactionSummaryProps) => {
               <div className="flex flex-col items-center bg-gradient-to-br from-blue-500 to-cyan-600 rounded-lg p-4 text-white">
                 <Package className="h-5 w-5 mb-1" />
                 <div className="text-lg font-medium">Total Submitted</div>
-                <div className="text-2xl font-bold">{summary.submitted + 1}</div>
+                <div className="text-2xl font-bold">{summary.total+1}</div>
               </div>
               <div className="flex flex-col items-center bg-gradient-to-br from-green-500 to-emerald-600 rounded-lg p-4 text-white">
                 <CheckCircle className="h-5 w-5 mb-1" />

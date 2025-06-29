@@ -98,17 +98,20 @@ export const Hero = () => {
           {/* Badge */}
           <div className="inline-flex items-center space-x-2 bg-blue-600/10 dark:bg-blue-600/20 text-blue-700 dark:text-blue-300 px-3 py-2 md:px-4 md:py-2 rounded-full text-xs md:text-sm font-medium mb-6 animate-fade-in-up border border-blue-500/30">
             <div className="w-1.5 h-1.5 md:w-2 md:h-2 bg-blue-500 rounded-full animate-pulse"></div>
-            <span>Blockchain-Powered E-Waste Recycling Network</span>
+            <span>Smarter E-Waste Recycling with AI-Powered Blockchain Verification</span>
           </div>
 
           {/* Main Heading - responsive */}
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-heading font-bold mb-6 animate-fade-in-up leading-tight" style={{ animationDelay: '0.1s' }}>
-            Decentralized{' '}
-            <span className="text-gradient-blockchain relative">
-              E-Waste
-              <div className="absolute -bottom-1 md:-bottom-2 left-0 w-full h-0.5 md:h-1 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-full opacity-60"></div>
-            </span>{' '}
-            Revolution
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-heading font-bold mb-6 animate-fade-in-up leading-tight text-center" style={{ animationDelay: '0.1s' }}>
+            <span>
+              Revolutionizing{' '}
+              <span className="text-gradient-blockchain relative">
+                E-Waste
+                <div className="absolute -bottom-1 md:-bottom-2 left-0 w-full h-0.5 md:h-1 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-full opacity-60"></div>
+              </span>
+            </span>
+            <br />
+            <span className="block mt-4">with AI & Blockchain</span>
           </h1>
 
           {/* Subtitle - responsive */}
@@ -124,16 +127,17 @@ export const Hero = () => {
               size="lg"
               className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 md:px-8 md:py-4 rounded-full text-base md:text-lg font-semibold transition-all duration-300 hover:scale-105 hover:shadow-xl group w-full sm:w-auto"
             >
-              Start Your Green Journey
+              Start Your Recycling Journey
               <ArrowRight className="ml-2 h-4 w-4 md:h-5 md:w-5 transition-transform group-hover:translate-x-1" />
             </Button>
             <Button
               variant="outline"
               size="lg"
-              className="border-2 border-blue-500 text-blue-600 dark:text-blue-400 hover:bg-blue-600 hover:text-white px-6 py-3 md:px-8 md:py-4 rounded-full text-base md:text-lg font-semibold transition-all duration-300 hover:scale-105 w-full sm:w-auto"
+              className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white hover:text-slate-900 border-0 shadow-lg hover:shadow-xl px-6 py-3 md:px-8 md:py-4 rounded-full text-base md:text-lg font-semibold transition-all duration-300 hover:scale-105 w-full sm:w-auto relative overflow-hidden group"
               onClick={() => navigate('/explore')}
             >
-              Explore Network
+              <span className="relative z-10">Explore Network</span>
+              <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </Button>
           </div>
 
