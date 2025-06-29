@@ -139,7 +139,7 @@ eRecycleChain is a cutting-edge decentralized application that combines **blockc
 
 ### **1. Clone the Repository**
 ```bash
-git clone https://github.com/yourusername/eRecycleChain.git
+git clone https://github.com/KrishPatel1010/eRecycleChain.git
 cd eRecycleChain
 ```
 
@@ -356,14 +356,11 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support & Community
 
-- **Discord**: [Join our community](https://discord.gg/erecyclechain)
-- **Twitter**: [@eRecycleChain](https://twitter.com/eRecycleChain)
-- **Email**: support@erecyclechain.com
-- **Documentation**: [docs.erecyclechain.com](https://docs.erecyclechain.com)
+- **Email**: krishpatel8463@gmail.com
 
 ## 🌟 Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=yourusername/eRecycleChain&type=Date)](https://star-history.com/#yourusername/eRecycleChain&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=yourusername/eRecycleChain&type=Date)](https://star-history.com/#KrishPatel1010/eRecycleChain&Date)
 
 ---
 
